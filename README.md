@@ -28,11 +28,11 @@ It automatically:
 *📂 Project Structure*
 
 carbon-ai-agent/
-│── **agent.py** # Main entry point
-│── **requirements.txt** # Python dependencies
-│── **custom_parsers/** # Auto-generated bank-specific parsers
-│── **tests/** # Pytest test cases for validation
-└── **data/** # Sample bank statements
+│── agent.py # Main entry point
+│── requirements.txt # Python dependencies
+│── custom_parsers/ # Auto-generated bank-specific parsers
+│── tests/ # Pytest test cases for validation
+└── data/ # Sample bank statements
 
 
 *🧭 Agent Architecture*
