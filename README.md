@@ -27,7 +27,7 @@ It automatically:
 
 *📂 Project Structure*
 
-carbon-ai-agent/
+Karbon AI/
 │── agent.py # Main entry point
 │── requirements.txt # Python dependencies
 │── custom_parsers/ # Auto-generated bank-specific parsers
@@ -44,6 +44,7 @@ The agent follows a Plan → Act → Validate → Refine loop. A LangGraph state
   *Refiner Node:* Fixes code automatically upon failure, with up to 3 retries.
  *End Node:* Returns the final parsed DataFrame.
 This loop ensures robustness and automation with minimal manual intervention.
+
 
 
 
