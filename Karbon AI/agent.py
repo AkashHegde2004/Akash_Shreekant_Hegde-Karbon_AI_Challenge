@@ -8,7 +8,12 @@ import re
 from pathlib import Path
 from langgraph.graph import StateGraph, END
 from groq import Groq
-GROQ_API_KEY = "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"
+from dotenv import load_dotenv
+import os
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+if not GROQ_API_KEY:
+    raise ValueError("GROQ_API_KEY not found in .env file")
 client = Groq(api_key=GROQ_API_KEY)
 def clean_code(raw: str) -> str:
     """Remove markdown fences and extra text from LLM output."""
