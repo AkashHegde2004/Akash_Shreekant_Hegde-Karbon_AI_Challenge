@@ -33,6 +33,8 @@ Karbon AI/
 │── custom_parsers/ # Auto-generated bank-specific parsers
 │── tests/ # Pytest test cases for validation
 └── data/ # Sample bank statements
+│── .env #enter your groq api key here
+
 
 
 *🧭 Agent Architecture*
@@ -42,7 +44,7 @@ The agent follows a Plan → Act → Validate → Refine loop. A LangGraph state
   *CodeGen Node:* Writes a custom parser (e.g., custom_parsers/icici_parser.py).
   *Test Node:* Executes pytest to compare parsed output with reference data.
   *Refiner Node:* Fixes code automatically upon failure, with up to 3 retries.
- *End Node:* Returns the final parsed DataFrame.
+  *End Node:* Returns the final parsed DataFrame.
 This loop ensures robustness and automation with minimal manual intervention.
 
 
@@ -50,3 +52,4 @@ This loop ensures robustness and automation with minimal manual intervention.
 
 
 <img width="906" height="443" alt="Screenshot 2025-09-17 124229" src="https://github.com/user-attachments/assets/6afca942-4eea-4cb7-b0af-002f738f6535" />
+
